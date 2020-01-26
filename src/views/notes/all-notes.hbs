@@ -1,0 +1,25 @@
+<div class = "row">
+    {{#each notes}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">
+
+                </h3>
+                <p> 
+                    {{description}}
+                </p>
+                <p> 
+                    Latitud:{{latitude}}
+                </p>
+                <p> 
+                    Lontitud:{{longitude}}
+                </p>
+                <p>
+                    Fecha registro: {{date}}
+                </p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
