@@ -3,9 +3,10 @@ const usuarios = express.Router()
 const cors = require("cors")
  const jwt = require("jsonwebtoken")
  const bcryptjs = require("bcryptjs")
-
-
  const Usuario = require("../modelos/usuario")
+
+usuarios.use(cors())
+
  process.env.SECRET_KEY = 'secret'
 
  usuarios.post('/registrar',(req,res)=>{
@@ -21,7 +22,7 @@ const cors = require("cors")
      }
      console.log(UsuarioData)
      Usuario.findOne({
-         email : req.body.email
+         usuario : req.body.usuario
      })
      .then(usuario =>{
          if(!usuario){
@@ -43,9 +44,9 @@ const cors = require("cors")
          res.send('error' + err)
      })
  })
-usuarios.post('/login',(req,res)=>{
+usuarios.post('/login',(req,res,next)=>{
     Usuario.findOne({
-    email:req.body.email
+    usuario:req.body.usuario
 
     })
     .then(usuario =>{
@@ -62,7 +63,7 @@ usuarios.post('/login',(req,res)=>{
                 })
                 res.send(token)
             }else{
-                res.json({error:"usuario no existe"})
+                res.json({error:"verificar contraseña"})
             }
         }else{
             res.json({error:"usuario no existe"})
@@ -71,6 +72,8 @@ usuarios.post('/login',(req,res)=>{
     .catch(err =>{
         res.send('error '+err)
     })
+})
+
     usuarios.get('/profile',(req,res)=>{
 
         var decoded = jwt.verify(req.headers['authorization'],process.env.SECRET_KEY)
@@ -88,5 +91,5 @@ usuarios.post('/login',(req,res)=>{
             res.send('error '+err)
         })
     })
-})
+
  module.exports= usuarios
