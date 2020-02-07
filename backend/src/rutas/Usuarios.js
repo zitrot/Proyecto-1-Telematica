@@ -13,7 +13,7 @@ const cors = require("cors")
      
      const UsuarioData = {
          
-         primer_nombre : req.body.segundo_nombre,
+         primer_nombre : req.body.primer_nombre,
          segundo_nombre: req.body.segundo_nombre,
          email:req.body.email,
          contraseña: req.body.contraseña,
