@@ -11,7 +11,7 @@ const app = express();
 
 
 //configuraciones
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 //middlewares
 app.use(morgan('dev'));
 app.use(bodyParser.json())

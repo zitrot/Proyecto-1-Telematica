@@ -20,14 +20,5 @@ ruta.post('/', async(req, res) => {
     res.json({ status: "tarea guardada" });
 });
 
-ruta.put('/:id', async(req, res) => {
-    const { title, description } = req.body;
-    const newTarea = { title, description };
-    await Tarea.findOneAndUpdate(req.params.id, newTarea);
-});
 
-ruta.delete('/:id', async(req, res) => {
-    await Tarea.findOneAndUpdate(req.params.id, newTarea);
-    res.json({ status: "tarea eliminada" });
-});
 module.exports = ruta;

@@ -21,7 +21,7 @@ fetchTareas(e){
         alert("Ingrese sesion para ver los registros de datos")
     }
     else{
-    fetch('http://localhost:3000/api/tareas/')
+    fetch('http://localhost:3001/api/tareas/')
     .then(res =>res.json())
     .then(data =>{
         this.setState({tareas: data});
