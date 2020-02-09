@@ -65,9 +65,3 @@ Agradecimientos
 
 [Fazt tutorial](https://www.youtube.com/watch?v=DqpL5UtJHus) 
 
-
-Enlaces
-============
-[Mongo]: <https://www.mongodb.com/es>
-[React] :(<https://es.reactjs.org/>
-[NodeJS] :<https://nodejs.org/es/>
