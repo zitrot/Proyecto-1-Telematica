@@ -47,11 +47,17 @@ $npm start
 Registro de usuarios
 ================
 
+![Test Image 7](https://github.com/zitrot/Proyecto-1-Telematica/blob/master/Imagenes/registro.png)
 
+Inicio de sesion
+==============
+
+![Test Image 7](https://github.com/zitrot/Proyecto-1-Telematica/blob/master/Imagenes/iniciosesion.png)
 
 registro de datos
 ===========
 
+![Test Image 7](https://github.com/zitrot/Proyecto-1-Telematica/blob/master/Imagenes/postman.png)
 
 
 Agradecimientos
@@ -62,6 +68,6 @@ Agradecimientos
 
 Enlaces
 ============
-[Mongo] (https://www.mongodb.com/es)
-[React] (https://es.reactjs.org/)
-[NodeJS] (https://nodejs.org/es/)
+[Mongo]: <https://www.mongodb.com/es>
+[React] :(<https://es.reactjs.org/>
+[NodeJS] :<https://nodejs.org/es/>
