@@ -18,12 +18,14 @@ Hay muchos módulos de Node utilizados para que la aplicación se ejecute.
 Si desea (y necesita) instalarlos en caso de que requieran actualización o modificación
 
 BackEnd:
+```
 npm i express jsonwebtoken bcryptjs cors axios body-parser morgan mongoose passport passport-local \
  bcryptjs nodemon --save
- 
+ ```
 FrontEnd:
+```
 npm i jwt-decode react react-dom react-router-dom react-scripts
-
+```
 Despliegue y ejecución
 =================
 
