@@ -51,7 +51,7 @@ class Register extends Component {
                             </div>
                             <div className="form-group">
                                 <label > dirección email</label>
-                                <input type="email" className="form-control" name="email" placeholder="Ingresar segundo nombre" value={this.state.email} onChange={this.onChange}/>
+                                <input type="email" className="form-control" name="email" placeholder="Ingresar correo" value={this.state.email} onChange={this.onChange}/>
                             </div>
 
                             <div className="form-group">

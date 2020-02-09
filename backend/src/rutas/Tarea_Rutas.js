@@ -17,7 +17,7 @@ ruta.post('/', async(req, res) => {
         description
     });
     await tarea.save();
-    res.json({ status: "tarea guardada" });
+    res.json({ status: "datos guardados" });
 });
 
 
